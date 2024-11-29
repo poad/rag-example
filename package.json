@@ -1,0 +1,14 @@
+{
+  "name": "rag-example",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "lint": "pnpm -r lint",
+    "lint-fix": "pnpm -r lint-fix",
+    "build": "pnpm -r --if-present build",
+    "dev": "pnpm --filter @llm-ts-example/app dev",
+    "clean": "pnpm -r --if-present clean"
+  },
+  "packageManager": "pnpm@9.14.4+sha512.c8180b3fbe4e4bca02c94234717896b5529740a6cbadf19fa78254270403ea2f27d4e1d46a08a0f56c89b63dc8ebfd3ee53326da720273794e6200fcf0d184ab"
+}

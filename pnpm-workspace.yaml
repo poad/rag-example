@@ -1,0 +1,4 @@
+packages:
+  - './batch'
+  - './app'
+  - './cdk'
