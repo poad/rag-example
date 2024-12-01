@@ -1,5 +1,5 @@
 {
-  "name": "@llm-ts-example/cdk",
+  "name": "@rag-example/cdk",
   "version": "0.1.0",
   "bin": "bin/cdk.js",
   "type": "module",
