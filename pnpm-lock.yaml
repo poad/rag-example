@@ -148,7 +148,7 @@ importers:
         version: 25.0.1
       langchain:
         specifier: ^0.3.6
-        version: 0.3.6(@langchain/anthropic@0.3.8(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(encoding@0.1.13))(@langchain/aws@0.1.2(@aws-sdk/client-sso-oidc@3.699.0(@aws-sdk/client-sts@3.699.0))(@aws-sdk/client-sts@3.699.0)(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))))(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.4(debug@4.3.7))(cheerio@1.0.0)(encoding@0.1.13)(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))
+        version: 0.3.6(@langchain/anthropic@0.3.8(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(encoding@0.1.13))(@langchain/aws@0.1.2(@aws-sdk/client-sso-oidc@3.699.0(@aws-sdk/client-sts@3.699.0))(@aws-sdk/client-sts@3.699.0)(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))))(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.4)(cheerio@1.0.0)(encoding@0.1.13)(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -174,9 +174,6 @@ importers:
       '@types/node':
         specifier: ^22.10.1
         version: 22.10.1
-      aws-cdk:
-        specifier: ^2.171.1
-        version: 2.171.1
       eslint:
         specifier: ^9.16.0
         version: 9.16.0
@@ -236,7 +233,7 @@ importers:
         version: 10.4.2
       langchain:
         specifier: ^0.3.6
-        version: 0.3.6(@langchain/anthropic@0.3.8(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(encoding@0.1.13))(@langchain/aws@0.1.2(@aws-sdk/client-sso-oidc@3.699.0(@aws-sdk/client-sts@3.699.0))(@aws-sdk/client-sts@3.699.0)(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))))(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.4(debug@4.3.7))(cheerio@1.0.0)(encoding@0.1.13)(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))
+        version: 0.3.6(@langchain/anthropic@0.3.8(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(encoding@0.1.13))(@langchain/aws@0.1.2(@aws-sdk/client-sso-oidc@3.699.0(@aws-sdk/client-sts@3.699.0))(@aws-sdk/client-sts@3.699.0)(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))))(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.4)(cheerio@1.0.0)(encoding@0.1.13)(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))
       langfuse:
         specifier: ^3.31.1
         version: 3.31.1
@@ -275,8 +272,8 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0
       '@vitest/eslint-plugin':
-        specifier: ^1.1.12
-        version: 1.1.12(@typescript-eslint/utils@8.16.0(eslint@9.16.0)(typescript@5.7.2))(eslint@9.16.0)(typescript@5.7.2)(vitest@2.1.6(@types/node@22.10.1)(jsdom@25.0.1)(tsx@4.19.2)(yaml@2.6.1))
+        specifier: ^1.1.13
+        version: 1.1.13(@typescript-eslint/utils@8.16.0(eslint@9.16.0)(typescript@5.7.2))(eslint@9.16.0)(typescript@5.7.2)(vitest@2.1.6(@types/node@22.10.1)(jsdom@25.0.1)(tsx@4.19.2)(yaml@2.6.1))
       aws-cdk:
         specifier: ^2.171.1
         version: 2.171.1
@@ -2043,8 +2040,8 @@ packages:
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-  '@vitest/eslint-plugin@1.1.12':
-    resolution: {integrity: sha512-iv9K9fz9qRxBo9J/PGSMcLdOFIKqtFZ6THqSVG/jW8CJZFkIWLxPduCTXkbyG6FNKgL49fkv348nSgmfqCU6FA==}
+  '@vitest/eslint-plugin@1.1.13':
+    resolution: {integrity: sha512-oabbCT4fCQfmFNtH2UuDfHx1d7dzi+VD3qwCpBfECfyzQq/Re9u7qTtE2WqV/hAuAOALw3ZVRiub2mXmpTyn/Q==}
     peerDependencies:
       '@typescript-eslint/utils': '>= 8.0'
       eslint: '>= 8.57.0'
@@ -5498,7 +5495,7 @@ snapshots:
       flat: 5.0.2
       ibm-cloud-sdk-core: 5.1.0
       js-yaml: 4.1.0
-      langchain: 0.3.6(@langchain/anthropic@0.3.8(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(encoding@0.1.13))(@langchain/aws@0.1.2(@aws-sdk/client-sso-oidc@3.699.0(@aws-sdk/client-sts@3.699.0))(@aws-sdk/client-sts@3.699.0)(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))))(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.4(debug@4.3.7))(cheerio@1.0.0)(encoding@0.1.13)(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))
+      langchain: 0.3.6(@langchain/anthropic@0.3.8(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(encoding@0.1.13))(@langchain/aws@0.1.2(@aws-sdk/client-sso-oidc@3.699.0(@aws-sdk/client-sts@3.699.0))(@aws-sdk/client-sts@3.699.0)(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))))(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.4)(cheerio@1.0.0)(encoding@0.1.13)(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))
       langsmith: 0.2.8(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))
       openai: 4.73.1(encoding@0.1.13)(zod@3.23.8)
       uuid: 10.0.0
@@ -6246,7 +6243,7 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitest/eslint-plugin@1.1.12(@typescript-eslint/utils@8.16.0(eslint@9.16.0)(typescript@5.7.2))(eslint@9.16.0)(typescript@5.7.2)(vitest@2.1.6(@types/node@22.10.1)(jsdom@25.0.1)(tsx@4.19.2)(yaml@2.6.1))':
+  '@vitest/eslint-plugin@1.1.13(@typescript-eslint/utils@8.16.0(eslint@9.16.0)(typescript@5.7.2))(eslint@9.16.0)(typescript@5.7.2)(vitest@2.1.6(@types/node@22.10.1)(jsdom@25.0.1)(tsx@4.19.2)(yaml@2.6.1))':
     dependencies:
       '@typescript-eslint/utils': 8.16.0(eslint@9.16.0)(typescript@5.7.2)
       eslint: 9.16.0
@@ -7402,7 +7399,7 @@ snapshots:
       isstream: 0.1.2
       jsonwebtoken: 9.0.2
       mime-types: 2.1.35
-      retry-axios: 2.6.0(axios@1.7.4(debug@4.3.7))
+      retry-axios: 2.6.0(axios@1.7.4)
       tough-cookie: 4.1.4
     transitivePeerDependencies:
       - supports-color
@@ -7644,7 +7641,7 @@ snapshots:
 
   known-css-properties@0.30.0: {}
 
-  langchain@0.3.6(@langchain/anthropic@0.3.8(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(encoding@0.1.13))(@langchain/aws@0.1.2(@aws-sdk/client-sso-oidc@3.699.0(@aws-sdk/client-sts@3.699.0))(@aws-sdk/client-sts@3.699.0)(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))))(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.4(debug@4.3.7))(cheerio@1.0.0)(encoding@0.1.13)(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)):
+  langchain@0.3.6(@langchain/anthropic@0.3.8(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(encoding@0.1.13))(@langchain/aws@0.1.2(@aws-sdk/client-sso-oidc@3.699.0(@aws-sdk/client-sts@3.699.0))(@aws-sdk/client-sts@3.699.0)(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))))(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.4)(cheerio@1.0.0)(encoding@0.1.13)(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)):
     dependencies:
       '@langchain/core': 0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))
       '@langchain/openai': 0.3.14(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(encoding@0.1.13)
@@ -7674,7 +7671,7 @@ snapshots:
 
   langfuse-langchain@3.31.1(langchain@0.3.6(@langchain/anthropic@0.3.8(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(encoding@0.1.13))(@langchain/aws@0.1.2(@aws-sdk/client-sso-oidc@3.699.0(@aws-sdk/client-sts@3.699.0))(@aws-sdk/client-sts@3.699.0)(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))))(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.4)(cheerio@1.0.0)(encoding@0.1.13)(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))):
     dependencies:
-      langchain: 0.3.6(@langchain/anthropic@0.3.8(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(encoding@0.1.13))(@langchain/aws@0.1.2(@aws-sdk/client-sso-oidc@3.699.0(@aws-sdk/client-sts@3.699.0))(@aws-sdk/client-sts@3.699.0)(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))))(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.4(debug@4.3.7))(cheerio@1.0.0)(encoding@0.1.13)(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))
+      langchain: 0.3.6(@langchain/anthropic@0.3.8(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(encoding@0.1.13))(@langchain/aws@0.1.2(@aws-sdk/client-sso-oidc@3.699.0(@aws-sdk/client-sts@3.699.0))(@aws-sdk/client-sts@3.699.0)(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))))(@langchain/core@0.3.19(openai@4.73.1(encoding@0.1.13)(zod@3.23.8)))(axios@1.7.4)(cheerio@1.0.0)(encoding@0.1.13)(openai@4.73.1(encoding@0.1.13)(zod@3.23.8))
       langfuse: 3.31.1
       langfuse-core: 3.31.1
 
@@ -8299,7 +8296,7 @@ snapshots:
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
-  retry-axios@2.6.0(axios@1.7.4(debug@4.3.7)):
+  retry-axios@2.6.0(axios@1.7.4):
     dependencies:
       axios: 1.7.4(debug@4.3.7)
 
