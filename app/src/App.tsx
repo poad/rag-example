@@ -31,6 +31,21 @@ const models = [
     name: 'Cohere Command R+ v1 (AWS Bedrock)',
     selected: false,
   },
+  {
+    id: 'nova-micro',
+    name: 'Amazon Nove Micro (AWS Bedrock)',
+    selected: false,
+  },
+  {
+    id: 'nova-lite',
+    name: 'Amazon Nove Lite (AWS Bedrock)',
+    selected: false,
+  },
+  {
+    id: 'nova-pro',
+    name: 'Amazon Nove Pro (AWS Bedrock)',
+    selected: false,
+  },
 ];
 
 async function read(
