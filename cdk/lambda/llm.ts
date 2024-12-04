@@ -9,7 +9,6 @@ export function selectLlm(modelType?: string): {
   model: BaseChatModel;
 } {
   const bedrockRegion = process.env.BEDROCK_AWS_REGION;
-
   if (modelType === 'cohere') {
     logger.debug('use: cohere.command-r-plus-v1:0 on AWS Bedrock');
     return {
@@ -58,6 +57,54 @@ export function selectLlm(modelType?: string): {
       }),
     };
   }
+  if (modelType === 'nova-lite') {
+    logger.debug('use: amazon.nova-lite-v1:0 on AWS Bedrock');
+    return {
+      platform: 'aws',
+      modelName: 'us.amazon.nova-lite-v1:0',
+      model: new ChatBedrockConverse({
+        model: 'us.amazon.nova-lite-v1:0',
+        temperature: 0,
+        streaming: true,
+        metadata: {
+          tag: 'chat',
+        },
+        region: bedrockRegion,
+      }),
+    };
+  }
+  if (modelType === 'nova-micro') {
+    logger.debug('use: amazon.nova-micro-v1:0 on AWS Bedrock');
+    return {
+      platform: 'aws',
+      modelName: 'us.amazon.nova-micro-v1:0',
+      model: new ChatBedrockConverse({
+        model: 'us.amazon.nova-micro-v1:0',
+        temperature: 0,
+        streaming: true,
+        metadata: {
+          tag: 'chat',
+        },
+        region: bedrockRegion,
+      }),
+    };
+  }
+  if (modelType === 'nova-pro') {
+    logger.debug('use: amazon.nova-pro-v1:0 on AWS Bedrock');
+    return {
+      platform: 'aws',
+      modelName: 'us.amazon.nova-pro-v1:0',
+      model: new ChatBedrockConverse({
+        model: 'us.amazon.nova-pro-v1:0',
+        temperature: 0,
+        streaming: true,
+        metadata: {
+          tag: 'chat',
+        },
+        region: bedrockRegion,
+      }),
+    };
+  }
   if (modelType === 'gpt-4o-mini') {
     logger.debug('use: GPT-4o mini on Azure OpenAI Service');
     return {
@@ -65,7 +112,6 @@ export function selectLlm(modelType?: string): {
       modelName: 'gpt-4o-mini',
       model: new AzureChatOpenAI({
         modelName: 'gpt-4o-mini',
-        deploymentName: 'gpt-4o-mini',
         temperature: 0,
         streaming: true,
         metadata: {
@@ -80,7 +126,6 @@ export function selectLlm(modelType?: string): {
     modelName: 'gpt-4o',
     model: new AzureChatOpenAI({
       modelName: 'gpt-4o',
-      deploymentName: 'gpt-4o',
       temperature: 0,
       streaming: true,
       metadata: {
