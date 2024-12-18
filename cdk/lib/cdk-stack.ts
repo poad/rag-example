@@ -208,6 +208,22 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
           cachePolicy: cloudfront.CachePolicy.CACHING_DISABLED,
           allowedMethods: cloudfront.AllowedMethods.ALLOW_ALL,
           originRequestPolicy: cloudfront.OriginRequestPolicy.ALL_VIEWER_EXCEPT_HOST_HEADER,
+          responseHeadersPolicy: new cdk.aws_cloudfront.ResponseHeadersPolicy(
+            this,
+            'ResponseHeadersPolicy',
+            {
+              corsBehavior: {
+                accessControlAllowOrigins: [
+                  'http://localhost:4173',
+                  'http://localhost:5173',
+                ],
+                accessControlAllowHeaders: ['*'],
+                accessControlAllowMethods: ['ALL'],
+                accessControlAllowCredentials: false,
+                originOverride: true,
+              },
+            },
+          ),
         },
       },
       httpVersion: cloudfront.HttpVersion.HTTP2_AND_3,
