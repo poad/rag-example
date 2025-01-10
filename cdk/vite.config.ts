@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
 /// <reference types="vite/client" />
 
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import * as dotenv from 'dotenv';
 
 export default defineConfig({
@@ -16,7 +16,4 @@ export default defineConfig({
   build: {
     target: 'esnext',
   },
-  // resolve: {
-  //   conditions: ['development'],
-  // }
 });
