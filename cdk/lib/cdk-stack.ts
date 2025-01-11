@@ -127,6 +127,7 @@ export class CloudfrontCdnTemplateStack extends cdk.Stack {
       },
       bundling: {
         minify: true,
+        format: nodejs.OutputFormat.ESM,
         // ...devOptions.bundling,
       },
       memorySize: 256,

@@ -110,5 +110,5 @@ Use three sentences maximum and keep the answer concise.
   };
 }
 
-export const { graph } = await createGraph({});
+const { graph } = await createGraph({});
 export default graph;
