@@ -3,7 +3,7 @@
   "dockerfile_lines": [],
   "dependencies": ["."],
   "graphs": {
-    "agent": "./src/memory_agent/graph.ts:graph"
+    "agent": "./lambda/graph.ts:graph"
   },
-  "env": ".env"
+  "env": ".env.test"
 }
