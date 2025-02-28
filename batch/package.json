@@ -14,9 +14,9 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@langchain/aws": "^0.1.4",
-    "@langchain/community": "^0.3.32",
-    "@langchain/core": "^0.3.40",
+    "@langchain/aws": "^0.1.5",
+    "@langchain/community": "^0.3.33",
+    "@langchain/core": "^0.3.41",
     "@langchain/langgraph": "^0.2.49",
     "@langchain/openai": "^0.3.17",
     "@langchain/pinecone": "^0.1.3",
