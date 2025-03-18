@@ -14,8 +14,8 @@ const config: Config & { stackName: string } = env
   : app.node.tryGetContext('default');
 
 const endpoint = app.node.tryGetContext('oai-endpoint');
+const instanceName = app.node.tryGetContext('oai-instance-name');
 const apiKey = app.node.tryGetContext('oai-api-key');
-const deployName = app.node.tryGetContext('oai-deploy');
 const embeddingsDeployName = app.node.tryGetContext('oai-embeddings-deploy');
 const apiVersion = app.node.tryGetContext('oai-api-version');
 
@@ -48,12 +48,13 @@ const pinecone = {
 };
 
 new CloudfrontCdnTemplateStack(app, config.stackName, {
-  ...config,
   appName: 'rag-example',
+  bucketName: config.bucketName,
+  cloudfront: config.cloudfront,
   environment: env,
   endpoint,
+  instanceName,
   apiKey,
-  deployName,
   embeddingsDeployName,
   apiVersion,
   langfuse,

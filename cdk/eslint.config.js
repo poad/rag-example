@@ -19,9 +19,6 @@ const gitignorePath = path.resolve(__dirname, "./.gitignore");
 
 export default tseslint.config(
   includeIgnoreFile(gitignorePath),
-  eslint.configs.recommended,
-  ...tseslint.configs.strict,
-  ...tseslint.configs.stylistic,
   {
     ignores: [
       '**/*.d.ts',
@@ -38,6 +35,9 @@ export default tseslint.config(
       '.output',
     ],
   },
+  eslint.configs.recommended,
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
   {
     files: ['{bin,lib,lambda}/**/*.{ts,tsx}'],
     ...eslintImport.flatConfigs.recommended,
@@ -61,9 +61,7 @@ export default tseslint.config(
       '@stylistic/semi': ["error", "always"],
       '@stylistic/ts/indent': ['error', 2],
       'comma-dangle': ["error", "always-multiline"],
-      semi: ["error", "always"],
-      quotes: ["error", "single"],
-      indent: ['error', 2]
+      '@stylistic/quotes': ['error', 'single'],
     },
   },
   {

@@ -26,7 +26,17 @@ const models = [
   },
   {
     id: 'o1-mini',
-    name: 'GPT-o1 mini',
+    name: 'o1 mini',
+    selected: false,
+  },
+  {
+    id: 'o3-mini',
+    name: 'o3 mini',
+    selected: false,
+  },
+  {
+    id: 'o1',
+    name: 'o1',
     selected: false,
   },
   {
